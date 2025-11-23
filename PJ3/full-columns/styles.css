@@ -10,14 +10,14 @@
 img {
   width: 100%;
   min-height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   margin: 10px;
 }
 
 main {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .panel {
@@ -31,7 +31,8 @@ main {
   background-color: #eeeee7;
   color: #323230;
   padding: 10px 20px;
-  height: 300px;
+  min-height: 300px;
+  overflow-wrap: break-word;
 }
 
 /* Welcome panel */
@@ -91,7 +92,7 @@ main {
 
 /*Photos panel*/
 .panel.photos {
-  background-color: #fb963e ;
+  background-color: #fb963e;
   grid-template-rows: 1fr 2fr;
 }
 
@@ -99,10 +100,64 @@ main {
   main {
     grid-template-columns: 1fr 1fr;
   }
+
+  .panel.welcome {
+    grid-column: span 2;
+  }
+
+  .panel {
+    padding: 20px 40px;
+  }
 }
 
-@media screen and (max-width: 680px) {
-    main {
-        grid-template-columns: 1fr;
-    }
+@media screen and (max-width: 760px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    padding: 25px 30px;
+  }
+
+  .panel.welcome h1 {
+    font-size: 2.5em;
+  }
+
+  .panel .text {
+    min-height: 250px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .panel {
+    padding: 20px;
+  }
+
+  .panel.welcome , .panel.about , .panel.photos {
+    grid-column: span 1;
+   }
+  
+  .panel.welcome h1 {
+    font-size: 2em;
+  }
+  
+  .panel .text {
+    min-height: auto; 
+  }
+
+  .panel.welcome nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .panel.welcome nav a {
+    margin-right: 0;
+  }
+
+  .panel.welcome nav a:hover::after {
+    width: 20%;
+  }
 }
