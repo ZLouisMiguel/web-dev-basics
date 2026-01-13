@@ -11,11 +11,6 @@ PJ6/
 │   ├── styles.css
 │   ├── script.js
 │   └── description.md (optional)
-├── weather-app/
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   └── description.md (optional)
 └── README.md
 ```
 ---
@@ -52,14 +47,10 @@ A minimalist web application that fetches and displays inspirational quotes from
 
 ---
 
-## Weather App
-
----
-
 ### Setup Instructions
 1. Clone the repository
 2. Navigate to the quote-generator directory
 3. Open index.html in a web browser
 4. The application works immediately with no configuration required
 
-The Quote Generator serves as a foundation for understanding API integration, preparing for more complex applications like the Weather App.
+The Quote Generator serves as a foundation for understanding API integration, preparing for more complex applications that involve a client server architecture.
