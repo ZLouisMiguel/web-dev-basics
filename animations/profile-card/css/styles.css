@@ -150,3 +150,39 @@ img {
 .card__social-text {
   top: 0.5rem;
 }
+
+.animation .card__social-control {
+    transform: rotate(-135deg);
+}
+
+.card__social.animation {
+    animation: up-animation 1s ease-in-out forwards;
+}
+
+@keyframes up-animation {
+    0%,100% {
+        transform: rotate(0);
+    }
+    50%,60% {
+        transform: rotate(-3deg);
+    }
+    88% {
+        transform: rotate(1deg);
+    }
+}
+
+.card__social.down-animation {
+    animation: down-animation 1s ease-in-out forwards;
+}
+
+@keyframes down-animation {
+    0%,100% {
+        transform: rotate(0);
+    }    
+    50%,60% {
+        transform: rotate(6deg);
+    }    
+    88% {
+        transform: rotate(-1deg);
+    }    
+}
