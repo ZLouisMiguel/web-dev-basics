@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Profile Card</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card__border">
+          <img
+            src="assets/profile.jpg"
+            alt="card profile image"
+            class="card__img"
+          />
+        </div>
 
+        <h3 class="card__name">Louis Miguel</h3>
+        <span class="card__profession">Fullstack Developer</span>
+        <div class="card__social" id="card-social">
+          <div class="card__social-control">
+            <!--toggle-button-->
+            <div class="card__social-toggle" id="card-toggle">
+              <i class="fa-solid fa-plus"></i>
+            </div>
 
-    
+            <span class="card__social-text">My Social Networks</span>
+
+            <!--Card Social-->
+            <ul class="card__social-list">
+              <a
+                href="https://github.com/ZLouisMiguel"
+                target="_blank"
+                class="card__social-link"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/louis-miguel-7a7596345/"
+                target="_blank"
+                class="card__social-link"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/_lou.123/"
+                target="_blank"
+                class="card__social-link"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
