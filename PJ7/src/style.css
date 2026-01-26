@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Core brand colors */
+  --soft-sage: #abc8a2;
+  --deep-olive: #1a2417;
+
+  /* Text */
+  --text-primary: #0f140e;
+  --text-muted: #4a5a45;
+
+  /* Surfaces */
+  --surface-glass: rgba(255, 255, 255, 0.55);
+  --surface-solid: #f4f6f3;
+
+  /* Borders */
+  --border-soft: rgba(26, 36, 23, 0.15);
+  --border-strong: rgba(26, 36, 23, 0.35);
+
+  /* Effects */
+  --blur: blur(12px);
+  --shadow-soft: 0 8px 30px rgba(26, 36, 23, 0.15);
+
+  /* Accent */
+  --accent: #7ea874; /* darker sage for hover/active */
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--soft-sage), var(--surface-solid));
+  color: var(--text-primary);
+}
+
+header {
+  width: 90%;
+  padding: 5px;
+}
+
+.nav {
+  position: fixed;
+  top: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: var(--surface-glass);
+  backdrop-filter: var(--blur);
+
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+
+  box-shadow: var(--shadow-soft);
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: var(--deep-olive);
+  font-size: 1rem;
+  font-weight: 500;
+
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  background: rgba(171, 200, 162, 0.35);
+  color: var(--deep-olive);
+}
