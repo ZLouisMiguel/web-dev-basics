@@ -2,7 +2,7 @@
 
 :root {
   /* Core brand colors */
-  --soft-sage: #abc8a2;
+  --soft-sage: rgb(171, 200, 162);
   --deep-olive: #1a2417;
 
   /* Text */
@@ -40,7 +40,7 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(180deg, var(--soft-sage), var(--surface-solid));
+  background: linear-gradient(180deg, var(--soft-sage), var(--border-strong));
   color: var(--text-primary);
 }
 
@@ -100,7 +100,7 @@ header {
 
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.1),
+    var(--soft-sage),
     var(--border-strong)
   );
 }
