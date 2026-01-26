@@ -46,7 +46,6 @@ body {
 
 header {
   width: 90%;
-  padding: 5px;
 }
 
 .nav {
@@ -88,4 +87,51 @@ header {
 .nav ul li a:hover {
   background: rgba(171, 200, 162, 0.35);
   color: var(--deep-olive);
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.2rem;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1),
+    var(--border-strong)
+  );
+}
+
+.hero h1 {
+  font-size: 3rem;
+  padding: 5px 10px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.hero .btn {
+  margin-top: 1rem;
+  background: rgba(26, 36, 23, 0.85);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+
+  text-decoration: none;
+  font-weight: 500;
+
+  box-shadow: 0 10px 25px rgba(26, 36, 23, 0.25);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hero .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 35px rgba(26, 36, 23, 0.35);
 }
