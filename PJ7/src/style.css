@@ -154,6 +154,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  align-items: stretch;
 }
 
 .project-card {
@@ -181,10 +182,9 @@ main {
   opacity: 0.85;
 }
 
-.project-card h3 {
-  color: var(--deep-olive);
-  font-size: 1.25rem;
-  font-weight: 600;
+.projects h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
 }
 
 .project-card p {
