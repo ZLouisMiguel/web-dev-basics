@@ -1,28 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
 
 :root {
-  /* Core brand colors */
-  --soft-sage: rgb(171, 200, 162);
+  /* Core identity */
+  --sage-light: #cfe0c9; /* background / sky */
+  --sage-main: #abc8a2; /* surfaces */
+  --sage-deep: #6b8e23; /* accents / emphasis */
   --deep-olive: #1a2417;
 
   /* Text */
   --text-primary: #0f140e;
-  --text-muted: #4a5a45;
+  --text-muted: #4f5f49;
 
-  /* Surfaces */
+  /* Glass surfaces */
   --surface-glass: rgba(255, 255, 255, 0.55);
+  --surface-glass-strong: rgba(255, 255, 255, 0.75);
   --surface-solid: #f4f6f3;
 
   /* Borders */
-  --border-soft: rgba(26, 36, 23, 0.15);
-  --border-strong: rgba(26, 36, 23, 0.35);
+  --border-soft: rgba(26, 36, 23, 0.12);
+  --border-strong: rgba(26, 36, 23, 0.3);
 
   /* Effects */
   --blur: blur(12px);
-  --shadow-soft: 0 8px 30px rgba(26, 36, 23, 0.15);
+  --shadow-soft: 0 8px 30px rgba(26, 36, 23, 0.18);
 
   /* Accent */
-  --accent: #7ea874; /* darker sage for hover/active */
+  --accent: var(--sage-deep);
 }
 
 *,
@@ -40,12 +43,8 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(180deg, var(--soft-sage), var(--border-strong));
+  background: linear-gradient(180deg, var(--sage-light), var(--sage-main));
   color: var(--text-primary);
-}
-
-header {
-  width: 90%;
 }
 
 .nav {
@@ -98,11 +97,7 @@ header {
   text-align: center;
   gap: 1.2rem;
 
-  background: linear-gradient(
-    180deg,
-    var(--soft-sage),
-    var(--border-strong)
-  );
+  background: linear-gradient(180deg, var(--soft-sage), var(--border-strong));
 }
 
 .hero h1 {
@@ -133,5 +128,5 @@ header {
 
 .hero .btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 14px 35px rgba(26, 36, 23, 0.35);
+  box-shadow: 0 10px 35px rgba(26, 36, 23, 0.35);
 }
