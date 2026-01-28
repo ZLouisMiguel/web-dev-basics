@@ -72,10 +72,19 @@ export const projects = [
   {
     imgPath: "./javascript.svg",
     alt: "JavaScript",
-    title: "DOM Interaction Playground",
+    title: "Theme switcher",
     description:
       "An interactive project introducing DOM selection, event handling, and dynamic content updates using JavaScript.",
-    tech: "JavaScript Basics",
+    tech: "JavaScript DOM Basics",
+    githubLink: "#",
+  },
+  {
+    imgPath: "./javascript.svg",
+    alt: "JavaScript",
+    title: "Counter",
+    description:
+      "An interactive counter app that uses the basic events of the dom with click and keypress events",
+    tech: "JavaScript DOM",
     githubLink: "#",
   },
 
