@@ -6,7 +6,7 @@ export const projects = [
     description:
       "A first introduction to web development using a basic HTML file. Students learn project structure, semantic tags, and how a webpage is rendered in the browser.",
     tech: "HTML",
-    githubLink: "#",
+    githubLink: "https://github.com/ZLouisMiguel/week1",
   },
 
   {
@@ -16,7 +16,7 @@ export const projects = [
     description:
       "A multi-section HTML page focused on semantic structure, navigation, lists, images, and basic forms.",
     tech: "HTML",
-    githubLink: "#",
+    githubLink: "https://github.com/ZLouisMiguel/week3",
   },
 
   {
@@ -26,7 +26,7 @@ export const projects = [
     description:
       "A complete personal website built with semantic HTML and styled using CSS. Introduces layouts, responsiveness, and smooth navigation.",
     tech: "HTML + CSS",
-    githubLink: "#",
+    githubLink: "https://github.com/ZLouisMiguel/week2",
   },
 
   {
@@ -36,7 +36,7 @@ export const projects = [
     description:
       "A corporate-style website built using a 12-column CSS Grid system to demonstrate structured layouts and precise alignment.",
     tech: "CSS Grid",
-    githubLink: "#",
+    githubLink: "https://github.com/ZLouisMiguel/week3",
   },
 
   {
@@ -46,7 +46,7 @@ export const projects = [
     description:
       "A visually dynamic landing page using asymmetrical grid layouts and full-height sections to explore modern design composition.",
     tech: "Advanced CSS Grid",
-    githubLink: "#",
+    githubLink: "https://github.com/ZLouisMiguel/week3",
   },
 
   {
@@ -56,7 +56,7 @@ export const projects = [
     description:
       "A Pinterest-style masonry layout focusing on variable-height content, responsive columns, and content-first design.",
     tech: "CSS Layout Patterns",
-    githubLink: "#",
+    githubLink: "https://github.com/ZLouisMiguel/week3",
   },
 
   {
@@ -66,7 +66,7 @@ export const projects = [
     description:
       "A text-focused multi-column layout inspired by newspaper design, emphasizing readability and content flow.",
     tech: "CSS Columns",
-    githubLink: "#",
+    githubLink: "https://github.com/ZLouisMiguel/week3",
   },
 
   {
@@ -76,7 +76,7 @@ export const projects = [
     description:
       "An interactive project introducing DOM selection, event handling, and dynamic content updates using JavaScript.",
     tech: "JavaScript DOM Basics",
-    githubLink: "#",
+    githubLink: "https://github.com/ZLouisMiguel/week4",
   },
   {
     imgPath: "./javascript.svg",
@@ -85,7 +85,7 @@ export const projects = [
     description:
       "An interactive counter app that uses the basic events of the dom with click and keypress events",
     tech: "JavaScript DOM",
-    githubLink: "#",
+    githubLink: "https://github.com/ZLouisMiguel/week4",
   },
 
   {
@@ -95,7 +95,7 @@ export const projects = [
     description:
       "A dynamic to-do list application focused on state management, user input handling, and DOM manipulation.",
     tech: "JavaScript State",
-    githubLink: "#",
+    githubLink: "https://github.com/ZLouisMiguel/week5",
   },
 
   {
@@ -105,7 +105,7 @@ export const projects = [
     description:
       "An interactive image gallery featuring dynamic rendering, modal views, and keyboard navigation.",
     tech: "JavaScript Interactivity",
-    githubLink: "#",
+    githubLink: "https://github.com/ZLouisMiguel/week5",
   },
 
   {
@@ -115,6 +115,6 @@ export const projects = [
     description:
       "A minimalist web app that fetches quotes from a public API, introducing async JavaScript, error handling, and real-world data usage.",
     tech: "APIs & Async JS",
-    githubLink: "#",
+    githubLink: "https://github.com/ZLouisMiguel/week6",
   },
 ];
